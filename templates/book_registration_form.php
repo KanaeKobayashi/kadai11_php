@@ -14,7 +14,11 @@
 
 <link rel="stylesheet" href="../css/style.css">
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     
@@ -36,6 +40,9 @@
     </div>
   </div>
 </nav>
+<h4 style="text-align:center; font-size:16px; color:green; padding-top:10px;">
+  <?php echo $_SESSION['name']."さん、今日は".date("Y/m/d")."です。"; ?>
+</h4>
     <h1 class="title">あなたのオススメの本を教えてください
     <button id="searchButton" onclick="window.location.href = '../templates/search.php' "style="border-radius: 50%; border: none; padding:2px;background-color:white;"><span class="material-symbols-outlined">
 search

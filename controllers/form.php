@@ -78,6 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo 'オススメの本が送信されました。ありがとうございました！';
 }
+require_once '../models/model.php';
+$userName = $_SESSION['name'];
 
 require_once('../templates/book_registration_form.php');
 

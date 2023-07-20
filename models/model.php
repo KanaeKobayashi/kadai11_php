@@ -109,3 +109,12 @@ function h($str)
 {
     return htmlspecialchars($str, ENT_QUOTES);
 }
+
+
+class UserGreeting {
+    public static function greeting($userName) {
+        date_default_timezone_set('Asia/Tokyo');
+        $date = date('Y/m/d');
+        return "こんにちは、{$userName}さん、今日は{$date}です。";
+    }
+}
